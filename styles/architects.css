@@ -118,7 +118,37 @@ main > section{
 
 /* responsive media query*/
 @media screen and (max-width: 576px) {
-    .navbar, .nav-links{
+    .navbar, .nav-links, .teams {
         flex-direction: column;
     }
+     .team-img-container{
+        grid-template-columns:repeat(1, 1fr );
+     }
+     .our-features{
+        margin-left: 20px;
+     }
+   .teams {
+    margin: 0 0 ;
+   }
+}
+
+/* medium size device*/
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .navbar, .nav-links, .teams {
+        flex-direction: column;
+    }
+     .team-img-container{
+        grid-template-columns:repeat(2, 1fr );
+        padding-top: 50px;
+     }
+     .our-features{
+        margin-left: 20px;
+     }
+   .teams {
+    margin: 0 0 ;
+   }
+   .our-features{
+    text-align: center;
+   }
+    
 }
